@@ -8,8 +8,12 @@ int main()
     stdio_init_all();
     init_gpio();
 
+    // Configura o temporizador para chamar a função de callback a cada 1 segundo.
+    add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer);
+
     while (true) {
-        printf("Hello, world!\n");
+        // Pausa de 1 segundos para reduzir o uso da CPU.
         sleep_ms(1000);
+        printf("1 Segundo se passou!\n");
     }
 }
