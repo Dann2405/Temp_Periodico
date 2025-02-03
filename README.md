@@ -9,7 +9,8 @@ Este projeto pode ser executado tanto no **Wokwi Simulator** (integrado ao **VS 
 ### Principais Funcionalidades
 
 - **Controle de Semáforo:** Alterna o estado de três LEDs em um ciclo de 3 segundos, simulando o funcionamento de um semáforo convencional:
-  - LED **vermelho** acende enquanto os demais permanecem apagados.
+  - Nos primeiros 3 segundos, todos os leds permanecem apagados. (Válido apenas na inicialização do programa.)
+  - Após os três segundos iniciais o LED **vermelho** acende enquanto os demais permanecem apagados.
   - Após 3 segundos, o LED **amarelo** acende e os outros são desligados.
   - Depois de mais 3 segundos, o LED **verde** acende e os demais são desligados.
   - O ciclo se repete continuamente.
