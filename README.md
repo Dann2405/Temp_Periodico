@@ -9,10 +9,11 @@ Este projeto pode ser executado tanto no **Wokwi Simulator** (integrado ao **VS 
 ### Principais Funcionalidades
 
 - **Controle de Semáforo:** Alterna o estado de três LEDs em um ciclo de 3 segundos, simulando o funcionamento de um semáforo convencional:
-  - Nos primeiros 3 segundos, todos os leds permanecem apagados. (Válido apenas na inicialização do programa.)
+  - Nos primeiros 3 segundos (contando a partir do numero 0 até o 2 (0,1,2)), todos os leds permanecem apagados. (Válido apenas na inicialização do programa.)
   - Após os três segundos iniciais o LED **vermelho** acende enquanto os demais permanecem apagados.
   - Após 3 segundos, o LED **amarelo** acende e os outros são desligados.
   - Depois de mais 3 segundos, o LED **verde** acende e os demais são desligados.
+  - Sempre que um LED do semaforo ascende, o estado do mesmo é exibido no terminal.
   - O ciclo se repete continuamente.
 
 ---
@@ -68,7 +69,7 @@ Para testar o projeto no **Wokwi Simulator**, siga os passos abaixo:
 1. Abra o arquivo `diagram.json` no **VS Code**.
 2. Clique no botão **"Play"** para iniciar a simulação.
 3. O comportamento esperado do semáforo é:
-   - A cada 3 segundos, um LED diferente acende (vermelho, amarelo e verde), enquanto os demais permanecem apagados.
+   - A cada 3 segundos, um LED diferente acende (vermelho, amarelo e verde), enquanto os demais permanecem apagados, sempre exibindo o estado do semaforo no terminal.
    - O terminal exibirá a mensagem "1 segundo se passou" periodicamente, permitindo a monitoração do funcionamento da temporização.
 
 ---
