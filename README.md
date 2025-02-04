@@ -6,15 +6,18 @@ O **Temp_Periodico** é um projeto desenvolvido para demonstrar a implementaçã
 
 Este projeto pode ser executado tanto no **Wokwi Simulator** (integrado ao **VS Code**) quanto em hardware real, utilizando a placa de desenvolvimento **BitDogLab**.
 
-### Principais Funcionalidades
+---
 
-- **Controle de Semáforo:** Alterna o estado de três LEDs em um ciclo de 3 segundos, simulando o funcionamento de um semáforo convencional:
-  - Nos primeiros 3 segundos (contando a partir do numero 0 até o 2 (0,1,2)), todos os leds permanecem apagados. (Válido apenas na inicialização do programa.)
-  - Após os três segundos iniciais o LED **vermelho** acende enquanto os demais permanecem apagados.
-  - Após 3 segundos, o LED **amarelo** acende e os outros são desligados.
-  - Depois de mais 3 segundos, o LED **verde** acende e os demais são desligados.
-  - Sempre que um LED do semaforo ascende, o estado do mesmo é exibido no terminal.
-  - O ciclo se repete continuamente.
+## **Principais Funcionalidades**  
+
+- **Controle de Semáforo:** Alterna o estado de três LEDs em um ciclo de 3 segundos, simulando o funcionamento de um semáforo convencional:  
+  - Nos primeiros **2 segundos** após a inicialização (segundos 0 e 1), todos os LEDs permanecem apagados. No terceiro segundo (segundo 2), o LED **vermelho** acende. *(Esse comportamento ocorre apenas na inicialização do programa.)*  
+  - A partir desse ponto, o semáforo segue o ciclo normal:  
+    - O LED **vermelho** permanece aceso por **3 segundos**, enquanto os demais ficam apagados.  
+    - Em seguida, o LED **amarelo** acende por **3 segundos**, e os outros são desligados.  
+    - Depois, o LED **verde** acende por **3 segundos**, desligando os demais.  
+  - Sempre que o estado do semáforo muda, a informação é exibida no terminal.  
+  - O ciclo se repete continuamente.  
 
 ---
 
@@ -68,9 +71,7 @@ Para testar o projeto no **Wokwi Simulator**, siga os passos abaixo:
 
 1. Abra o arquivo `diagram.json` no **VS Code**.
 2. Clique no botão **"Play"** para iniciar a simulação.
-3. O comportamento esperado do semáforo é:
-   - A cada 3 segundos, um LED diferente acende (vermelho, amarelo e verde), enquanto os demais permanecem apagados, sempre exibindo o estado do semaforo no terminal.
-   - O terminal exibirá a mensagem "1 segundo se passou" periodicamente, permitindo a monitoração do funcionamento da temporização.
+3. O semáforo entrara em execução demonstrando as funcionalidades destacadas em: **Principais Funcionalidades** .
 
 ---
 
