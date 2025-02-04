@@ -8,7 +8,7 @@ int main()
     stdio_init_all();
     init_gpio();
 
-    // Configura o temporizador para chamar a função de callback a cada 1 segundo.
+    // Configura o temporizador para chamar a função de callback a cada 3 segundos.
     add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer);
 
     while (true) {

@@ -40,16 +40,19 @@ bool repeating_timer_callback(struct repeating_timer *t)
         gpio_put(LED_R, 1);
         gpio_put(LED_Y, 0);
         gpio_put(LED_G, 0);
+        printf("\nESTADO DO SEMAFORO: VERMELHO!\n");
         break;
     case 1:
         gpio_put(LED_R, 0);
         gpio_put(LED_Y, 1);
         gpio_put(LED_G, 0);
+        printf("\nESTADO DO SEMAFORO: AMARELO!\n");
         break;
     case 2:
         gpio_put(LED_R, 0);
         gpio_put(LED_Y, 0);
         gpio_put(LED_G, 1);
+        printf("\nESTADO DO SEMAFORO: VERDE!\n");
         break;
     default:
         break;
